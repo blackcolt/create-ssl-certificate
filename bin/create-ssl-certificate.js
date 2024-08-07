@@ -92,7 +92,7 @@ const config = process.argv.reduce((currentConfig, val, index, array) => {
 
   return currentConfig
 }, {
-  domain: 'test',
+  domain: 'dev.co.il',
   hostname: process.cwd().split(path.sep).pop()
 })
 
