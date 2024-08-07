@@ -92,7 +92,7 @@ const config = process.argv.reduce((currentConfig, val, index, array) => {
 
   return currentConfig
 }, {
-  domain: 'dev.co.il',
+  domain: process.argv.indexOf('--sufix') === -1 ? 'dev.co.il' : process.argv[process.argv.indexOf('--sufix') + 1],
   hostname: process.cwd().split(path.sep).pop()
 })
 
